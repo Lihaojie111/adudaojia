@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/mobile/css/base.css">
+    <link rel="stylesheet" href="/public/mobile/css/contact_us.css">
+    <link rel="stylesheet" href="/public/mobile/css/layui.css">
+    <link rel="stylesheet" href="/public/mobile/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="/public/mobile/js/adaptive.js"></script>
+    <script src="/public/mobile/js/jquery.min.js"></script>
+    <title>联系我们 - {web name='title' /}</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <img src="/public/mobile/images/logo.png" alt="" class="logo">
+        <p class="fr" id="gzcode">阿度快修公众号<img src="/public/mobile/images/bottomjiao.png" alt=""></p>
+    </header>
+    <!-- 联系我们 -->
+    <div class="contact-us">
+        <div class="header">
+            <h1>联系我们</h1>
+            <hr>
+        </div>
+        <div class="three-con">
+            <ul>
+                <li>
+                    <div class="bigcircle">
+                        <div class="smallcircle">
+                            <img src="/public/mobile/images/icon1.png" alt="">
+                        </div>
+                    </div>
+                    <h1>公司地址</h1>
+                    <p>{web name='address' /}</p>
+                </li>
+                <li>
+                    <div class="bigcircle">
+                        <div class="smallcircle">
+                            <img src="/public/mobile/images/icon2.png" alt="">
+                        </div>
+                    </div>
+                    <h1>联系电话</h1>
+                    <p style="margin-top: .5rem;">{web name='tel' /}</p>
+                </li>
+                <li>
+                    <div class="bigcircle">
+                        <div class="smallcircle">
+                            <img src="/public/mobile/images/icon3.png" alt="">
+                        </div>
+                    </div>
+                    <h1>公众号</h1>
+                    <img src="/public/mobile/images/code.png" alt="" style="width: 1rem;height: 1rem;margin-top: .4rem;" id="GZcode">
+                </li>
+            </ul>
+        </div>
+        <div id="map"></div>
+        <div id="panel"></div>
+    </div>
+    <!-- 在线留言 -->
+    <div class="contact-us">
+        <div class="header">
+            <h1>在线留言</h1>
+            <hr>
+        </div>
+        <div class="online-message">
+            <h1>如果你对我们的项目感兴趣或有什么问题，欢迎来此咨询。</h1>
+            <h2>我们将在24小时内给予答复，个人信息我们将严格保密。</h2>
+            <h3>注：下表*部分为必填项</h3>
+            <form action="{guestbook /}" method="post">
+                <div>
+                    <label for="">*标题：</label><input type="text" name="title" placeholder="请输入标题">
+                </div>
+                <div>
+                    <label for="">*姓名：</label><input type="text" name="username" placeholder="请输入姓名">
+                </div>
+                <div>
+                    <label for="">手机：</label><input type="text" name="tel" placeholder="请输入手机号">
+                </div>
+                <div>
+                    <label for="">*内容：</label><textarea name="content" placeholder="请输入您的内容"></textarea>
+                </div>
+                <div style="margin-top: 0;">
+                    <label for="">&nbsp;</label><button>提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 二维码遮罩 -->
+{include file="Public/footer" /}
+    <!-- 返回上一页 -->
+    <div class="return" align="center">
+        <img src="/public/mobile/images/return.png" alt="">
+    </div>
+</body>
+<!-- <script src="layui.all.js"></script> -->
+<script src="/public/mobile/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.9&key=94bd9d5bfeb8ffb61bafdecc436dd79d&plugin=AMap.Transfer"></script>
+<script type="text/javascript">
+	var map = new AMap.Map("map", {
+        resizeEnable: true,
+        center: [112.498073,33.006351],
+        zoom:17
+    });
+ var transOptions = {
+     map: map,
+     city: "南阳市",
+     panel: 'panel',
+	        policy: AMap.TransferPolicy.LEAST_TIME //乘车策略
+        };
+        var marker = new AMap.Marker({
+            position: map.getCenter(),
+            icon: '',
+            offset: new AMap.Pixel(-10, -20)
+        });
+        marker.setMap(map);
+    // 设置鼠标划过点标记显示的文字提示
+    marker.setTitle('南阳市鑫龙科技有限公司');
+    // 设置label标签
+    // label默认蓝框白底左上角显示，样式className为：amap-marker-label
+    marker.setLabel({
+        //修改label相对于maker的位置
+        offset: new AMap.Pixel(-0, -0),
+        content: "<div class='info'>南阳市鑫龙科技有限公司</div>"
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay:true,
+        loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    $("#gzcode").click(function(){
+        $(".mask-code").show();
+        $(this).find("img").css({"transform":"rotate(180deg)","transition":".5s ease all"})
+    });
+    $("#GZcode").click(function(){
+        $(".mask-code").show();
+        $(this).find("img").css({"transform":"rotate(180deg)","transition":".5s ease all"})
+    });
+    $(".mask-code").click(function(e){
+        var _target = $(e.target);
+        if (_target.closest(".kuang").length == 0) {
+            $(".mask-code").hide();
+        }
+        $("#gzcode").find("img").css({"transform":"rotate(0deg)","transition":".5s ease all"})
+    });
+    $(".return").click(function(){
+        window.location.href="index.html"
+    })
+</script>
+</html>

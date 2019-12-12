@@ -1,0 +1,222 @@
+body,html{
+    width: 100%;
+    background: #f9f9f9;
+}
+header{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff9f41;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    padding: 0 .3rem;
+}
+header img.logo{
+    display: inline-block;
+    width: 2.4rem;
+    height: .6rem;
+    vertical-align: middle;
+}
+header p{
+    color: #fff;
+    font-size: .28rem;
+}
+.container {
+    background: #fff;
+    margin-top: 1rem;
+    height: 100%;
+}
+.container img.banner{
+    width: 100%;
+}
+.seckill_nav ul{
+    overflow: hidden;
+    padding: .2rem .3rem;
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.seckill_nav ul li{
+    color: #aaa;
+    font-size: .24rem;
+    float: left;
+    width: 1.5rem;
+    height: 2rem;
+    text-align: center;
+    background: #ededed;
+    margin-right: .3rem;
+    padding-top: .2rem;
+    border-radius: .1rem;
+}
+.seckill_nav ul li img{
+    width: 1.2rem;
+    height: 1.1rem;
+    display: block;
+    margin: 0 auto;
+}
+.seckill_nav ul li:last-child{
+    margin-right: 0;
+}
+
+.seckill_nav ul li span{
+    font-size: .18rem;
+}
+
+.seckill_nav ul li.active{
+    color: #fff !important;
+    background: #ff9f41;
+}
+.seckill_goods{
+}
+.seckill_goods section{
+    display:none;
+    padding: 0rem .6rem .2rem;
+}
+.seckill_goods section ul{
+    overflow: hidden;
+    margin-right: -.15rem;
+}
+.seckill_goods section ul li{
+    padding: .1rem 0;
+    width: 32%;
+    background: red;
+    float: left;
+    margin-right: 2%;
+    border-radius: .2rem;
+    background: #ededed;
+    margin-bottom: .2rem;
+}
+.seckill_goods section ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.seckill_goods section ul li p{
+    padding: 0 .1rem;
+    font-size: .18rem;
+    margin-top: .1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.seckill_goods section ul li img{
+    width: 100%;
+    display: block;
+}
+.seckill_goods section ul li:nth-child(3n){
+    margin-right: 0;
+}
+.seckill_goods section img.banner{
+    width: 100%;
+    height: 4rem;
+    display: block;
+}
+.seckill_goods section.active{
+    display:block;
+}
+.container .about-adu{
+    padding: .2rem 0rem;
+    line-height: .6rem;
+    font-size: .26rem;
+}
+.container .about-adu hr{
+    margin: .1rem 0;
+}
+
+.look-more{
+    text-align: center;
+}
+/* 二维码遮罩 */
+.mask-code{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 111;
+    display: none;
+}
+.mask-code .kuang{
+    width: 3.4rem;
+    height: 4.6rem;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.7rem;
+    top: 50%;
+    margin-top: -2.3rem;
+    padding: .2rem;
+}
+.mask-code .kuang img{
+    width: 3rem;
+    height: 3rem;
+}
+/* 返回按钮 */
+.return{
+    width: .96rem;
+    height: .96rem;
+    border: .02rem solid #ff9f41;
+    border-radius: 50%;
+    background: #fff;
+    position: fixed;
+    right: .3rem;
+    bottom: .3rem;
+}
+.return img{
+    width: .64rem;
+    height: .64rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.32rem;
+    top: 50%;
+    margin-top: -.32rem;
+}
+@media screen and (max-width: 375px) {
+    header{
+        width: 7.5rem !important;
+        margin: 0rem auto;
+        left: 50%;
+        margin-left: -3.75rem !important;
+    }
+    .container{
+        width: 7.5rem !important;
+        margin: 0rem auto;
+    }
+}
+@media screen and (max-width: 414px) {
+
+}
+@media screen and (max-width: 768px) {
+    header{
+        width: 8.28rem;
+        margin: 0rem auto;
+        left: 50%;
+        margin-left: -4.14rem;
+    }
+    .container{
+        width: 8.28rem;
+        margin: 1rem auto;
+    }
+
+    .seckill_nav ul li{
+        color: #aaa;
+        font-size: .24rem;
+        float: left;
+        width: 23%;
+        height: 2rem;
+        text-align: center;
+        background: #ededed;
+        margin-right: 2%;
+        padding-top: .2rem;
+        border-radius: .1rem;
+    }
+    .seckill_nav ul li:last-child{
+        margin-right: 0;
+    }
+    .seckill_goods section ul li img{
+        width: 100%;
+        display: block;
+    }
+}

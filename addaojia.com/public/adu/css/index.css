@@ -1,0 +1,910 @@
+.sch-con>div{
+    height: 370px;
+}
+.sch-con img{
+    height: 200px;
+}
+.sch-name{
+    float:left;
+}
+.sch-name>span{
+    width: 100%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+}
+.sch-n{
+    overflow: hidden;
+}
+.sch-n span{
+    max-width: 80%;
+    float:left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.sch-con>div>ul li{
+     overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+@media (min-width: 992px) {
+
+    /**************认识阿度********************/
+
+    .know{
+
+        margin-top: 10px;
+
+    }
+
+    .know .adu-title{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        line-height: 100px;
+
+    }
+
+    .adu-title>span{
+
+        display: inline;
+
+        font-size: 30px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .adu-title>a{
+
+        font-size: 24px;
+
+        color: #666;
+
+    }
+
+    .adu-title>a span{
+
+        vertical-align: middle;
+
+    }
+
+    .adu-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .adu-art{
+
+        width: 53%;
+
+        padding: 45px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        background: #ededed;
+
+        color: #666666;
+
+        font-size: 18px;
+
+        line-height: 35px;
+
+    }
+
+    .adu-pic{
+
+        width: 47%;
+
+    }
+
+
+
+
+
+
+
+    /*********************优势*******************/
+
+    .adv-title{
+
+        line-height: 100px;
+
+    }
+
+    .adv-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .adv-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .adv-left{
+
+        width: 53%;
+
+    }
+
+    .adv-right{
+
+        width: 43%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    .right-item{
+
+        width: 48%;
+
+        background: #ededed;
+
+        -webkit-border-radius:10px;
+
+        -moz-border-radius:10px;
+
+        border-radius:10px;
+
+        padding: 30px;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    .right-item img{
+
+        margin: 0 auto;
+
+    }
+
+    .right-item p:not(:nth-child(2)){
+
+        color: #7b7b7b;
+
+        font-size: 18px;
+
+        line-height: 22px;
+
+        height: 18px;
+
+    }
+
+    .right-item .golden{
+
+        font-size: 24px;
+
+        color: #ff9f41;
+
+        border-bottom: 1px solid #ff9f41;
+
+        line-height: 55px;
+
+    }
+
+
+
+    /****************学苑***************/
+
+    .sch-title{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        line-height: 100px;
+
+    }
+
+    .sch-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .sch-title>a{
+
+        font-size: 24px;
+
+        color: #666;
+
+    }
+
+    .sch-title>a span{
+
+        vertical-align: middle;
+
+    }
+
+
+
+    .sch-con{
+
+        display: flex;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    .sch-con img{
+
+        width: 100%;
+
+    }
+
+    .sch-con>div{
+
+        width: 30%;
+
+        background: #ededed;
+
+        padding: 0;
+
+        -webkit-border-radius:10px;
+
+        -moz-border-radius:10px;
+
+        border-radius:10px;
+
+        margin-bottom: 20px;
+
+        margin-right: 5%;
+
+    }
+
+    .sch-con>div.nth-child(3n){
+
+        margin-right: 0;
+
+    }
+
+    .sch-con>div p{
+
+        font-size: 20px;
+
+        color: #ff9f41;
+
+        text-align: right;
+
+        padding: 0 15px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        line-height: 50px;
+
+    }
+
+    .sch-con>div p span.after{
+
+        border-top: 2px solid #ff9f41;
+
+        border-right: 2px solid #ff9f41;
+
+        vertical-align: middle;
+
+    }
+
+    .sch-n{
+
+        margin:30px 0 15px;
+
+        padding: 0 15px;
+
+    }
+
+    .sch-n>span{
+
+        font-size: 22px;
+
+        color: #666;
+
+        vertical-align: middle;
+
+    }
+
+    .sch-name{
+
+        width:0;
+
+        height:0;
+
+        border-width:0 20px 20px;
+
+        border-style:solid;
+
+        border-color:transparent transparent #ff9f41;/*透明 透明  灰*/
+
+        position:relative;
+
+        -webkit-transform: rotate(45deg);
+
+        -moz-transform: rotate(45deg);
+
+        -ms-transform: rotate(45deg);
+
+        -o-transform: rotate(45deg);
+
+        transform: rotate(45deg);
+
+        color: #666666;
+
+        display: inline-block;
+
+        font-size: 22px;
+
+    }
+
+    .sch-name span{
+
+        display:block;
+
+        width:0;
+
+        height:0;
+
+        border-width:0 20px 20px;
+
+        border-style:solid;
+
+        border-color:transparent transparent #ff9f41;/*透明 透明  黄*/
+
+        position:absolute;
+
+        top:1px;
+
+        left:-20px;
+
+    }
+
+    .sch-con ul{
+
+        padding-left: 55px;
+
+        color: #666666;
+
+        font-size: 20px;
+
+    }
+
+    /******************品牌合作******************/
+
+
+
+    .brand-title{
+
+        line-height: 100px;
+
+    }
+
+    .brand-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+
+
+
+
+    .col-lg-1-5{
+
+        width: 20%;
+
+        float: left;
+
+        text-align: center;
+
+        padding: 30px 0;
+
+        border:1px solid #666666;
+
+        margin-left: -1px;
+
+        margin-top: -1px;
+
+        background: white;
+
+    }
+
+    .col-lg-1-5 img{
+
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    /**************认识阿度********************/
+
+    .know{
+
+        margin-top: 10px;
+
+    }
+
+    .know .adu-title{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        line-height: 100px;
+
+    }
+
+    .adu-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .adu-title>a{
+
+        font-size: 24px;
+
+        color: #666;
+
+    }
+
+    .adu-title>a span{
+
+        vertical-align: middle;
+
+    }
+
+    .adu-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .adu-art{
+
+        width: 53%;
+
+        padding: 45px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        background: #ededed;
+
+        color: #666666;
+
+        font-size: 18px;
+
+        line-height: 35px;
+
+    }
+
+    .adu-pic{
+
+        width: 47%;
+
+    }
+
+
+
+
+
+
+
+    /*********************优势*******************/
+
+    .adv-title{
+
+        line-height: 100px;
+
+    }
+
+    .adv-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .adv-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .adv-left{
+
+        width: 53%;
+
+    }
+
+    .adv-right{
+
+        width: 43%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    .right-item{
+
+        width: 48%;
+
+        background: #ededed;
+
+        -webkit-border-radius:10px;
+
+        -moz-border-radius:10px;
+
+        border-radius:10px;
+
+        padding: 60px 30px;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    .right-item img{
+
+        margin: 0 auto;
+
+    }
+
+    .right-item p:not(:nth-child(2)){
+
+        color: #7b7b7b;
+
+        font-size: 18px;
+
+        line-height: 22px;
+
+        height: 22px;
+
+    }
+
+    .right-item .golden{
+
+        font-size: 28px;
+
+        color: #ff9f41;
+
+        border-bottom: 1px solid #ff9f41;
+
+        line-height: 55px;
+
+    }
+
+
+
+    /****************学苑***************/
+
+    .sch-title{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        line-height: 100px;
+
+    }
+
+    .sch-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+    .sch-title>a{
+
+        font-size: 24px;
+
+        color: #666;
+
+    }
+
+    .sch-title>a span{
+
+        vertical-align: middle;
+
+    }
+
+
+
+
+
+    .sch-con{
+
+        display: flex;
+
+    }
+
+    .sch-con>div{
+
+        width: 24%;
+
+        background: #ededed;
+
+        padding: 0;
+
+        -webkit-border-radius:10px;
+
+        -moz-border-radius:10px;
+
+        border-radius:10px;
+
+        margin-right: 1%;
+
+    }
+
+    .sch-con>div.nth-child(4n){
+
+        margin-right: 0
+
+    }
+
+    .sch-con>div p{
+
+        font-size: 20px;
+
+        color: #ff9f41;
+
+        text-align: right;
+
+        padding: 0 15px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        line-height: 50px;
+
+    }
+
+    .sch-con>div p span.after{
+
+        border-top: 2px solid #ff9f41;
+
+        border-right: 2px solid #ff9f41;
+
+        vertical-align: middle;
+
+    }
+
+    .sch-n{
+
+        margin:30px 0 15px;
+
+        padding: 0 15px;
+
+    }
+
+    .sch-n>span{
+
+        font-size: 22px;
+
+        color: #666;
+
+        vertical-align: middle;
+
+    }
+
+    .sch-name{
+
+        width:0;
+
+        height:0;
+
+        border-width:0 20px 20px;
+
+        border-style:solid;
+
+        border-color:transparent transparent #ff9f41;/*透明 透明  灰*/
+
+        position:relative;
+
+        -webkit-transform: rotate(45deg);
+
+        -moz-transform: rotate(45deg);
+
+        -ms-transform: rotate(45deg);
+
+        -o-transform: rotate(45deg);
+
+        transform: rotate(45deg);
+
+        color: #666666;
+
+        display: inline-block;
+
+        font-size: 22px;
+
+    }
+
+    .sch-name span{
+
+        display:block;
+
+        width:0;
+
+        height:0;
+
+        border-width:0 20px 20px;
+
+        border-style:solid;
+
+        border-color:transparent transparent #ff9f41;/*透明 透明  黄*/
+
+        position:absolute;
+
+        top:1px;
+
+        left:-20px;
+
+    }
+
+    .sch-con ul{
+
+        padding-left: 55px;
+
+        color: #666666;
+
+        font-size: 20px;
+
+    }
+
+    /******************品牌合作******************/
+
+
+
+    .brand-title{
+
+        line-height: 100px;
+
+    }
+
+    .brand-title>span{
+
+        display: inline;
+
+        font-size: 36px;
+
+        font-weight: bold;
+
+        text-shadow: 0px 4px 4px rgba(102,102,102,.4);
+
+    }
+
+
+
+
+
+    .col-lg-1-5{
+
+        width: 20%;
+
+        float: left;
+
+        text-align: center;
+
+        padding: 30px 0;
+
+        border:1px solid #666666;
+
+        margin-left: -1px;
+
+        margin-top: -1px;
+
+        background: white;
+
+    }
+
+    .col-lg-1-5 img{
+
+
+
+        margin: 0 auto;
+
+    }
+
+}

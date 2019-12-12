@@ -1,0 +1,239 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+}
+header{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff9f41;
+    z-index: 11;
+    padding: 0 .3rem;
+}
+header img.logo{
+    display: inline-block;
+    width: 2.4rem;
+    height: .6rem;
+    vertical-align: middle;
+}
+header p{
+    color: #fff;
+    font-size: .28rem;
+}
+/* 联系我们 */
+.contact-us{
+    width: 100%;
+    background: #fff;
+    margin-top: .2rem;
+    padding: .2rem .3rem;
+}
+.contact-us .header h1{
+    color: #ff9f41;
+    font-family: "汉仪菱心体简";
+    font-size: .48rem;
+}
+.contact-us .header hr{
+    width: .5rem;
+    background: #ff9f41;
+}
+.contact-us  .three-con ul{
+    overflow: hidden;
+}
+.contact-us  .three-con ul li{
+    width: 32%;
+    height: 3rem;
+    border: .01rem solid #aaa;
+    margin-top: .7rem;
+    position: relative;
+    text-align: center;
+    float: left;
+    margin-right: 2%;
+    font-size: .24rem;
+    padding: 0 .2rem;
+}
+.contact-us  .three-con ul li:last-child{
+    margin-right: 0;
+}
+.contact-us  .three-con ul li .bigcircle{
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.4rem;
+    border: .01rem solid #ff9f41;
+    top: -.4rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.contact-us  .three-con ul li .bigcircle .smallcircle{
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.3rem;
+    top: 50%;
+    margin-top: -.3rem;
+    background: #ff9f41;
+    border-radius: 50%;
+}
+
+.contact-us  .three-con ul li .bigcircle .smallcircle img{
+    width: .36rem;
+    height: .36rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.18rem;
+    top: 50%;
+    margin-top: -.18rem;
+}
+.contact-us  .three-con ul li h1{
+    height: .6rem;
+    border-bottom: .01rem solid #000;
+    line-height: .6rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: .6rem;
+}
+.contact-us  .three-con ul li p{
+    margin-top: .1rem;
+}
+.online-message{
+    background: url(../images/cooper.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: .2rem;
+}
+.online-message h1{
+    font-size: .24rem;
+}
+.online-message h2,.online-message h3{
+    font-size: .2rem;
+}
+.online-message form div{
+    margin-top: .2rem;
+}
+.online-message label{
+    width: 1rem;
+    display: inline-block;
+    text-align: right;
+    float: left;
+}
+.online-message button{
+    width: 1rem;
+    height: .5rem;
+    line-height: .5rem;
+    font-size: .24rem;
+    text-align: center;
+    background: #fff;
+    border: .01rem solid #ccc;
+}
+.online-message input{
+    border: .01rem solid #ccc;
+    outline: none;
+    width: 2.5rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-indent: .1rem;
+}
+.online-message textarea{
+    width: 5rem;
+    border: .01rem solid #ccc;
+    height: 2rem;
+    text-indent: .1rem;
+}
+#map{
+    width: 100%;
+    height: 4rem;
+    margin-top: .2rem;
+}
+/* 二维码遮罩 */
+.mask-code{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1111;
+    display: none;
+}
+.mask-code .kuang{
+    width: 3.4rem;
+    height: 4.6rem;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.7rem;
+    top: 50%;
+    margin-top: -2.3rem;
+    padding: .2rem;
+}
+.mask-code .kuang img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.return{
+    width: .96rem;
+    height: .96rem;
+    border: .02rem solid #ff9f41;
+    border-radius: 50%;
+    background: #fff;
+    position: fixed;
+    right: .3rem;
+    bottom: .3rem;
+}
+.return img{
+    width: .64rem;
+    height: .64rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.32rem;
+    top: 50%;
+    margin-top: -.32rem;
+}
+.amap-icon{
+    width: 10px;
+    height: 10px;
+}
+.amap-icon img {
+    width: 25px;
+    height: 34px;
+}
+
+.amap-marker-label{
+    border: 0;
+    background-color: #3f8af8;
+    color: #fff;
+}
+
+.info{
+    position: relative;
+    top: 0;
+    right: 0;
+    min-width: 0;
+}
+@media screen and (max-width: 375px) {
+    header{
+        width: 7.5rem !important;
+        margin: 0rem auto;
+    }
+    .contact-us{
+        width: 7.5rem !important;
+        margin: .2rem auto;
+    }
+}
+@media screen and (max-width: 414px) {
+
+}
+@media screen and (max-width: 768px) {
+    header{
+        width: 8.28rem;
+        margin: 0rem auto;
+    }
+    .contact-us{
+        width: 8.28rem;
+        margin: .2rem auto;
+    }
+}

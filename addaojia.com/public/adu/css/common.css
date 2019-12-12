@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: none;
+    border: none;
+    outline: none;
+}
+@font-face {
+    font-family: "hanyi";
+    src: url("../fonts/汉仪菱心体简.ttf")format('embedded-opentype');;
+}
+body{
+    /*font-family: "Microsoft YaHei";*/
+    font-family: "hanyi";
+    background: #f5f5f5;
+}
+a:hover{
+    text-decoration: none;
+}
+a{
+    color: #333;
+}
+.after{
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+@media (min-width: 320px){
+    .container-fluid{
+        width: 100%;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background: white;
+    }
+    .navbar-default .navbar-toggle:hover{
+        background: none;
+    }
+    .navbar-nav{
+        margin: 0 -15px;
+    }
+    .nav>li{
+        background: white;
+    }
+    .navbar-default{
+        background: none;
+        border: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top:0;
+        z-index: 998;
+    }
+    .navbar-brand{
+        padding: 8px 15px;
+    }
+    .navbar-brand>img{
+        width: 60%;
+    }
+}
+@media (min-width: 768px){
+    .container-fluid{
+        width: 750px;
+    }
+    .main{
+        width: 750px;
+        margin: 0 auto;
+    }
+    .nav>li{
+        background: none;
+    }
+    .container-fluid>.navbar-header{
+        width: 40%;
+    }
+    .container-fluid>.navbar-collapse{
+        float: right;
+        width: 60%;
+    }
+    .navbar-brand{
+        padding: 15px 15px;
+    }
+    .navbar-brand>img{
+        width: 195px;
+    }
+    .navbar-nav{
+        width: 100%;
+    }
+    .navbar-nav>li{
+        width: 16.66%;
+        text-align: center;
+    }
+    .navbar-nav>li>a{
+        line-height: 50px;
+
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-nav>.active1>a{
+        background: none;
+        color: white;
+        border-bottom: 1px solid white;
+
+    }
+    .navbar-default .navbar-nav>.active:hover{
+        background: none;
+    }
+}
+
+
+@media (min-width: 992px){
+    .top{
+        width: 100%;
+        background: rgba(255,255,255,.3);
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 999;
+        line-height: 40px;
+    }
+    .top>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+    }
+    .top-right{
+        position: relative;
+    }
+    .tcode{
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 100%;
+        display: none;
+    }
+    .top-right span.arrow{
+        display: inline-block;
+        width: 10px;
+        height:10px;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        vertical-align: middle;
+        -webkit-transform: rotate(45deg) translateY(-5px);
+        -moz-transform: rotate(45deg) translateY(-5px);
+        -ms-transform: rotate(45deg) translateY(-5px);
+        -o-transform: rotate(45deg) translateY(-5px);
+        transform: rotate(45deg) translateY(-5px);
+        margin-left: 10px;
+    }
+    .container-fluid{
+        width: 900px;
+    }
+    .navbar-default{
+        top:40px;
+    }
+    .bottom-nav{
+        width: 100%;
+        background: white;
+        padding: 50px 0;
+        color: #666666;
+        margin-top: 50px;
+    }
+    .bottom-nav>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-nav ul{
+        width: 67%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-nav ul li{
+        width: 20%;
+        list-style: none;
+    }
+    .bottom-nav ul li p.nav-title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .bottom-nav ul li p:not(:first-child){
+        font-size: 16px;
+        margin-bottom: 0;
+        line-height: 35px;
+    }
+    .code{
+        width: 17%;
+        text-align: center;
+    }
+    .code img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .code p{
+        font-size: 16px;
+        color: #666666;
+    }
+    .tel{
+        width: 16%;
+        text-align: center;
+    }
+    .tel img{
+        width: 40%;
+        margin: 10px auto;
+    }
+    .tel p{
+        font-size: 18px;
+        color: #666666;
+    }
+    .tel p:last-child{
+        font-size: 16px;
+    }
+    .foot{
+        width: 100%;
+        background: white;
+        line-height: 60px;
+        text-align: center;
+        border-top: 1px solid #f5f5f5;
+        font-size: 14px;
+        color: #999999;
+    }
+    .main{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: 1200px){
+    .container-fluid{
+        width: 1200px;
+    }
+    .main{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .navbar-default .navbar-nav>li>a{
+        font-size: 16px;
+    }
+}

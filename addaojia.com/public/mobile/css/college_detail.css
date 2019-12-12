@@ -1,0 +1,141 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+}
+header{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff9f41;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    padding: 0 .3rem;
+}
+header img.logo{
+    display: inline-block;
+    width: 2.4rem;
+    height: .6rem;
+    vertical-align: middle;
+}
+header p{
+    color: #fff;
+    font-size: .28rem;
+}
+.container{
+    padding: .2rem .3rem;
+    margin-top: 1rem;
+    background: #fff;
+}
+.container .title-nav{
+    font-size: .18rem;
+}
+.container .title-con{
+   
+    padding: 0.2rem .3rem;
+}
+.container .title-con h1{
+    font-size: .36rem;
+    text-align: center;
+}
+.container .title-con .release-time{
+    text-align: right;
+    font-size: .18rem;
+    color: #666;
+    margin: .2rem 0;
+}
+.container .title-con p{
+    text-indent: .48rem;
+    font-size: .24rem;
+    line-height: .4rem;
+}
+.container .title-con img{
+    width: 5.6rem;
+    height: 3rem;
+    margin: .2rem auto;
+    display: block;
+}
+.container .last-next{
+    overflow: hidden;
+    font-size: .18rem;
+}
+.container .last-next a{
+    width: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 二维码遮罩 */
+.mask-code{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 111;
+    display: none;
+}
+.mask-code .kuang{
+    width: 3.4rem;
+    height: 4.6rem;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.7rem;
+    top: 50%;
+    margin-top: -2.3rem;
+    padding: .2rem;
+}
+.mask-code .kuang img{
+    width: 3rem;
+    height: 3rem;
+}
+/* 返回按钮 */
+.return{
+    width: .96rem;
+    height: .96rem;
+    border: .02rem solid #ff9f41;
+    border-radius: 50%;
+    background: #fff;
+    position: fixed;
+    right: .3rem;
+    bottom: .3rem;
+}
+.return img{
+    width: .64rem;
+    height: .64rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.32rem;
+    top: 50%;
+    margin-top: -.32rem;
+}
+@media screen and (max-width: 375px) {
+    header{
+        width: 7.5rem !important;
+        margin: 0rem auto;
+        left: 50%;
+        margin-left: -3.75rem !important;
+    }
+    .container{
+        width: 7.5rem !important;
+        margin: 0rem auto;
+    }
+}
+@media screen and (max-width: 414px) {
+
+}
+@media screen and (max-width: 768px) {
+    header{
+        width: 8.28rem;
+        margin: 0rem auto;
+        left: 50%;
+        margin-left: -4.14rem;
+    }
+    .container{
+        width: 8.28rem;
+        margin: 1rem auto;
+    }
+}

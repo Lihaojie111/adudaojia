@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="never">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{$title}-{web name='title' /}</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/adu/css/common.css">
+    <link rel="stylesheet" href="/public/adu/css/sch-detail.css">
+</head>
+<body>
+    {include file="Public/header" /}
+    <div class="detail main">
+        <p class="page-title">当前位置：{position /}</p>
+        <p class="detail-title">{$content.title}</p>
+        <p class="date">{$content.publishtime|date='Y-m-d',###}</p>
+        <div class="detail-con">
+            <p>{$content.content}</p>
+        </div>
+        <div class="paging">
+            <p>上一篇<span>{if condition="$sy"}<a href="/index/show/index/cid/{$cid}/id/{$sy.id}.html">{$sy.title}</a>{else/}暂无数据{/if}</span></p>
+            <p>下一篇<span>{if condition="$xy"}<a href="/index/show/index/cid/{$cid}/id/{$xy.id}.html">{$xy.title}</a>{else/}暂无数据{/if}</span></p>
+        </div>
+    </div>
+    {include file="Public:footer" /}
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/public/adu/js/common.js"></script>
+<script src="/public/adu/js/sch-detail.js"></script>
+</html>

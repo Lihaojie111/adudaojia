@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{web name='title' /}</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/adu/css/common.css">
+    <link rel="stylesheet" href="/public/adu/css/index.css">
+</head>
+<body>
+    {include file="Public/header" /}
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            {banner id='1' limit='3'}
+            <li data-target="#myCarousel" data-slide-to="{$key}" {if condition="$key == 0"}class="active" {/if} ></li>
+            {/banner}
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+           {banner id='1' limit='3'}
+           <div class="item {if condition="$key == 0"} active {/if}">
+            <img src="{$banner.img}" alt="First slide">
+        </div>
+        {/banner}
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="know main">
+    <div class="adu-title"><span>认识阿度</span><a href="{:url('listing/index',array('cid'=>7))}">查看更多 <span class="after"></span></a></div>
+    <div class="adu-con">
+        <div class="adu-art">{content id='7' field='content' length='200'/}...</div>
+        <div class="adu-pic"><img src="/public/adu/images/adupic.png" class="img-responsive" alt=""></div>
+    </div>
+</div>
+<div class="advantage main">
+    <div class="adv-title"><span>品牌优势</span></div>
+    <div class="adv-con">
+        <div class="adv-left"><img src="/public/adu/images/adv-left.png" class="img-responsive" alt=""></div>
+        <div class="adv-right">
+            <div class="right-item">
+                <img src="/public/adu/images/one.png" class="img-responsive" alt="">
+                <p class="golden">高效工艺</p>
+                <p>高效保修</p>
+                <p>无需久等，回头客多</p>
+            </div>
+            <div class="right-item">
+                <img src="/public/adu/images/two.png" class="img-responsive" alt="">
+                <p class="golden">性价比高</p>
+                <p>价格透明，消费合理</p>
+                <p></p>
+            </div>
+            <div class="right-item">
+                <img src="/public/adu/images/three.png" class="img-responsive" alt="">
+                <p class="golden">保证品质</p>
+                <p>原料保证，技术专业可靠</p>
+                <p></p>
+            </div>
+            <div class="right-item">
+                <img src="/public/adu/images/four.png" class="img-responsive" alt="">
+                <p class="golden">创新技术</p>
+                <p>引进新技术，竞争力强</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="school main">
+    <div class="sch-title"><span>阿度学苑</span><a href="{:url('listing/index',array('cid'=>14))}">查看更多 <span class="after"></span></a></div>
+    <div class="sch-con">
+        {article cid='14' pagesize='12' order='id desc'}
+        <div>
+            <img src="{$article.litpic}" class="img-responsive" alt="">
+            <div class="sch-n"><div class="sch-name"><span></span></div><span>{$article.title}</span></div>
+            <ul><a href="{$article.url}"><li>{$article.description|mb_substr=0,20,'utf-8'}...</li></a></ul>
+            <a href="{:url('listing/index',array('cid'=>$article.cid))}"><p>查看更多<span class="after"></span></p></a>
+        </div>
+        {/article}
+    </div>
+</div>
+<div class="brand main">
+    <div class="brand-title"><span>品牌优势</span></div>
+    <div class="brand-con clearfix">
+        {article cid='20' pagesize='15'}
+        <div class="col-lg-1-5"><img src="{$article.litpic}" class="img-responsive" alt=""></div>
+        {/article}
+    </div>
+</div>
+{include file="Public/footer" /}
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/public/adu/js/common.js"></script>
+<script src="/public/adu/js/index.js"></script>
+</html>

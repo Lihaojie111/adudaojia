@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>{$title}-{web name='title' /}</title>
+
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/public/adu/css/common.css">
+
+    <link rel="stylesheet" href="/public/adu/css/adusch.css">
+   <style>
+	.kl-item .img-responsive{
+		width: 100%;
+		height:150px;
+	}
+	.kl-item-title{
+		display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:1;
+        overflow: hidden;
+		max-height: 45px;
+	}
+    .kl-item-date{
+        margin-top: 10px;
+    }
+   </style>
+</head>
+
+<body>
+
+    <body>
+
+        {include file="Public/header" /}
+
+        <div class="banner main"><img src="/public/adu/images/big.png" class="img-responsive" alt=""></div>
+
+        <div class="series main">
+
+            <a href="{:url('listing/index',array('cid'=>15))}"><img src="/public/adu/images/series1.png" class="img-responsive" alt=""></a>
+
+            <a href="{:url('listing/index',array('cid'=>22))}"><img src="/public/adu/images/series2.png" class="img-responsive" alt=""></a>
+
+            <a href="{:url('listing/index',array('cid'=>23))}"><img src="/public/adu/images/series3.png" class="img-responsive" alt=""></a>
+
+            <a href="{:url('listing/index',array('cid'=>21))}"><img src="/public/adu/images/series4.png" class="img-responsive" alt=""></a>
+
+        </div>
+
+        <div class="knowledge main">
+
+            <div class="kl-title">{$cate.name}</div>
+
+            <div class="kl-con">
+
+                {article cid='$cid' pagesize='8' orderby='id desc'}
+
+                <div class="kl-item" >
+
+                    <a href="{$article.url}">
+
+                        <img src="{$article.litpic}" class="img-responsive" alt="">
+
+                        <p class="kl-item-title">{$article.title}</p>
+
+                        <p class="kl-item-date">{$article.publishtime|date='Y-m-d',###}</p>
+
+                    </a>
+
+                </div>
+
+                {/article}
+
+            </div>
+
+            <p class="line"></p>
+
+            <center><p class="more">{$page}</p></center>
+
+        </div>
+        {include file="Public/footer" /}
+
+    </body>
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="/public/adu/js/common.js"></script>
+
+    <script src="/public/adu/js/adusch.js"></script>
+
+    </html>

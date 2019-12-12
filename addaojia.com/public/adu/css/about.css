@@ -1,0 +1,67 @@
+@media (min-width: 992px){
+    .top>div{
+        color: #999;
+        font-size: 14px;
+    }
+    .top-right span.arrow{
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+    }
+    .navbar-default{
+        background: white;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: #333;
+    }
+    .navbar-default .navbar-nav>.active1>a{
+        color: #333;
+        border-bottom: 1px solid #333;
+    }
+    .aboutus{
+        margin-top: 170px;
+    }
+    .aboutus{
+        background: white;
+    }
+    .hd{
+        width: 100%;
+        display: flex;
+
+    }
+    .hd p{
+        line-height: 55px;
+        font-size: 18px;
+        color: #999999;
+        width: 20%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .hd p.active{
+        color: #333333;
+    }
+    .bd .aboutadu{
+        display: none;
+    }
+    .bd .aboutadu.active{
+        display: block;
+    }
+    .bd .aboutadu img{
+        width: 100%;
+    }
+    .adu-art{
+        padding: 60px 140px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .adu-art .art-title{
+        font-size: 30px;
+        color: #ff9f41;
+        margin-bottom: 50px;
+    }
+    .adu-art p:last-child{
+        color: #666666;
+        font-size: 18px;
+        line-height: 40px;
+    }
+}

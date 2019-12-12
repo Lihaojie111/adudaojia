@@ -1,0 +1,13 @@
+{article cid='$cid' limit='$page_limit,6'}
+{if condition="!$article"}
+<li>没有更多啦</li>
+{else/}
+{/if}
+<li>
+	<a href="{$article.url}">
+		<img src="{$article.litpic}" alt="">
+		<p>{$article.title}</p>
+		<p>{$article.publishtime|date='Y-m-d',###}</p>
+	</a>
+</li>
+{/article}

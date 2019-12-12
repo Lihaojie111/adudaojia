@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>关于我们 - {web name='title' /}</title>
+
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/public/adu/css/common.css">
+
+    <link rel="stylesheet" href="/public/adu/css/about.css">
+   
+         <style>
+    .hd p{
+       cursor:pointer;
+    }
+
+    </style>
+</head>
+
+<body>
+
+{include file="Public/header" /}
+
+<div class="aboutus main">
+
+    <div class="hd">
+
+        <p {if condition="!$qie_id or $qie_id == 1"}class="active"{/if}>关于阿度</p>
+
+        <p {if condition="$qie_id == 2"} class="active"{/if} >阿度宗旨</p>
+
+        <p {if condition="$qie_id == 3"} class="active"{/if} >阿度愿景</p>
+
+    </div>
+
+    <div class="bd">
+
+        <div class="aboutadu {if condition="!$qie_id or $qie_id == 1"}active{/if} ">
+
+            <img src="/public/adu/images/big.png" class="img-responsive" alt="">
+
+            <div class="adu-art">
+
+                <p class="art-title">关于阿度</p>
+
+                <p>{content id='7' field='content'/}</p>
+
+            </div>
+
+        </div>
+
+        <div class="aboutadu {if condition="$qie_id == 2"} active {/if}">
+
+            <img src="/public/adu/images/big.png" alt="">
+
+            <div class="adu-art">
+
+                <p class="art-title">阿度宗旨</p>
+
+                <p>{content id='8' field='content'/}</p>
+
+            </div>
+
+        </div>
+
+        <div class="aboutadu {if condition="$qie_id == 3"} active {/if}">
+
+            <img src="/public/adu/images/big.png" alt="">
+
+            <div class="adu-art">
+
+                <p class="art-title">阿度愿景</p>
+
+                <p>{content id='9' field='content'/}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+{include file="Public/footer" /}
+
+</body>
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="/public/adu/js/common.js"></script>
+
+<script src="/public/adu/js/about.js"></script>
+
+</html>

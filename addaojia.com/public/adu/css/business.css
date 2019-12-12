@@ -1,0 +1,83 @@
+@media (min-width: 992px){
+    .top>div{
+        color: #999;
+        font-size: 14px;
+    }
+    .top-right span.arrow{
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+    }
+    .navbar-default{
+        background: white;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: #333;
+    }
+    .navbar-default .navbar-nav>.active1>a{
+        color: #333;
+        border-bottom: 1px solid #333;
+    }
+
+    .business{
+        margin-top: 150px;
+        background: white;
+    }
+    .bus-con{
+        padding: 60px 140px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .bus-title{
+        width: 100%;
+        padding: 75px 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url("../images/bus-bg.png") center no-repeat;
+        font-size: 18px;
+        color: #333333;
+        line-height: 40px;
+    }
+    .bus-list{
+        margin-top: 25px;
+    }
+    .bus-list>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 60px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .bus-list>div .bus-pic{
+        width: 16%;
+    }
+    .bus-list>div .bus-pic img{
+    }
+    .bus-list>div .bus-art{
+        width: 68%;
+        font-size: 16px;
+        color: #333;
+        line-height: 35px;
+    }
+    .pic-bottom{
+        width: 100%;
+        padding: 75px 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 18px;
+        color: #fff;
+        line-height: 40px;
+        background: url("../images/bus-bg2.png") center no-repeat;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .bus-list>div .bus-art{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,33 @@
+<div class="top hidden-sm hidden-xs">
+    <div class="main">
+        <div class="top-left">阿度快修官网</div>
+        <div class="top-right">
+            <span>阿度快修公众号</span><span class="arrow"></span>
+            <img src="/public/adu/images/tcode.png" class="tcode">
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="/public/adu/images/logo.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li {if condition="isset($cid) == false"} class="active1" {/if}><a href="/">首页</a></li>
+            <li {if condition="$cid == 7"} class="active1" {/if}><a href="{:url('listing/index',array('cid'=>7))}">关于我们</a></li>
+            <li {if condition="$cid == 10"} class="active1" {/if}><a href="{:url('listing/index',array('cid'=>10))}">企业文化</a></li>
+            <li  {if condition="$cid == 14"} class="active1" {/if}><a href="{:url('listing/index',array('cid'=>14))}">阿度学苑</a></li>
+            <li {if condition="$cid == 16"} class="active1" {/if}><a href="{:url('listing/index',array('cid'=>16))}">招商加盟</a></li>
+            <li {if condition="$cid == 17"} class="active1" {/if}><a href="{:url('listing/index',array('cid'=>17))}">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+</nav>

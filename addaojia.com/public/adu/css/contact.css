@@ -1,0 +1,319 @@
+@media (min-width: 992px){
+
+    .top>div{
+
+        color: #999;
+
+        font-size: 14px;
+
+    }
+
+    .top-right span.arrow{
+
+        border-right: 1px solid #999;
+
+        border-bottom: 1px solid #999;
+
+    }
+
+    .navbar-default{
+
+        background: white;
+
+    }
+
+    .navbar-default .navbar-nav>li>a{
+
+        color: #333;
+
+    }
+
+    .navbar-default .navbar-nav>.active1>a{
+
+        color: #333;
+
+        border-bottom: 1px solid #333;
+
+    }
+
+    .contact{
+
+        margin-top: 150px;
+
+        background: white;
+
+        padding: 40px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+    }
+
+    .art-title{
+
+        font-size: 30px;
+
+        color: #ff9f41;
+
+        margin-bottom: 50px;
+
+    }
+
+    .contact-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .contact-con>div{
+
+        width: 30%;
+
+        height: 190px;
+
+        border: 2px solid #666666;
+
+        padding-top: 60px;
+
+        text-align: center;
+
+        position: relative;
+
+    }
+
+    .contact-con>div img.fix{
+
+        position: absolute;
+
+        width: 74px;
+
+        height: 74px;
+
+        left: calc(50% - 37px);
+
+        top: -37px;
+
+    }
+
+    .contact-con>div img.code{
+
+        width: 30%;
+
+       margin: 0 auto;
+
+    }
+
+    .contact-con>div p{
+
+        font-size: 16px;
+
+        color: #666666;
+
+    }
+
+    .contact-con>div p.title{
+
+        width: 50%;
+
+        margin: 0 auto 10px;
+
+        padding-bottom: 10px;
+
+        font-size: 18px;
+
+        color: #666666;
+
+        border-bottom: 2px solid #666666;
+
+    }
+
+    .map{
+
+        margin-top: 50px;
+
+        text-align: center;
+
+    }
+
+    .map iframe{
+
+        width: 800px;
+
+        height: 300px;
+
+    }
+
+
+
+    .mes{
+
+        background: white;
+
+        padding: 40px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+    }
+
+    .mes-title{
+
+        font-size: 30px;
+
+        color: #ff9f41;
+
+        margin-bottom: 50px;
+
+    }
+
+    .mes-con{
+
+        display: flex;
+
+        justify-content: space-between;
+
+        background: #f5f5f5;
+
+    }
+
+    .form{
+
+        padding: 60px 20px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+    }
+
+    .form p{
+
+        color: #333;
+
+        margin: 0;
+
+    }
+
+    .form p:first-child{
+
+        font-size: 16px;
+
+    }
+
+    .form p:nth-child(2){
+
+        font-size: 16px;
+
+    }
+
+    .form p:nth-child(3){
+
+        font-size: 14px;
+
+    }
+
+    form{
+
+        margin-top: 20px;
+
+    }
+
+    form#contactus div{
+
+        margin-bottom: 10px;
+
+        color: #333333;
+
+    }
+
+    form#contactus input{
+
+        border: 2px solid #ccc;
+
+        margin-left: 10px;
+
+        padding: 2px 5px;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        vertical-align: middle;
+
+    }
+
+    form#contactus textarea{
+
+        border: 2px solid #ccc;
+
+        margin-left: 10px;
+
+        resize: none;
+
+    }
+
+    #contactus span{
+
+        vertical-align: middle;
+
+        font-size: 18px;
+
+    }
+
+    form .single{
+
+        margin: 0 5px;
+
+        vertical-align: middle;
+
+    }
+
+    form button{
+
+        width: 100px;
+
+        line-height: 35px;
+
+        border: 2px solid #999999;
+
+        background: #f5f5f5;
+
+        margin-left: 70px;
+
+    }
+
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .contact{
+
+        padding: 80px 140px;
+
+    }
+
+    .mes{
+
+        padding: 11px 140px;
+
+    }
+
+}
